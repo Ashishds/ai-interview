@@ -1,0 +1,1 @@
+"""HireAI FastAPI application package."""

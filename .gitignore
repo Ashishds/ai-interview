@@ -1,0 +1,98 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production builds
+.next/
+out/
+dist/
+build/
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.lock.hcl
+
+# Docker
+*.log
+*_log.txt
+backend_debug_log.txt
+backend_start_log.txt
+frontend_debug_log.txt
+
+# Redis dumps
+dump.rdb
+
+# Debug Scripts (Keep local, ignore for Git)
+debug_backend.py
+check_jobs.py
+seed_job.py
+test_premium_email.py
+append_email.py
+test_resume.txt
+*.bat
+
+# Legacy/Extra Folders
+recruiter-agent-main/
+scripts/
+docs/
+.gemini/
+.agents/
+.agent/
+_agents/
+_agent/
+brain/
+
+# Project-specific excludes
+BRD_and_Architecture_Detailed.md
+generate_resumes.py
+start_frontend.py
+backend/get_app.py
+backend/test_prompt.py
+backend/test_screening.py
+frontend/tsconfig.tsbuildinfo
+frontend/src/app/candidate/scorecard/demo/
+
+# Unnecessary files for new repo
+Euron_AWS_Deployment_Bible_v1.0.docx.pdf
+backend/db/chroma.sqlite3
+walkthrough.md
+

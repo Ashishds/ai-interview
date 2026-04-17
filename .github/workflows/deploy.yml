@@ -1,0 +1,29 @@
+name: HireAI Automated EC2 Deployment
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd Hiring_AI || git clone <YOUR_REPO_URL> Hiring_AI
+            cd Hiring_AI
+            git pull origin main
+            
+            # Export build args for the sub-path deployment
+            export NEXT_PUBLIC_API_URL="https://ashishai.in/HireAI/api"
+            
+            chmod +x deploy.sh
+            ./deploy.sh
