@@ -302,3 +302,5 @@ MIT License — Free to use for commercial projects.
 ---
 
 Built with ❤️ for modern HR teams. Powered by GPT-4o, OpenAI Realtime API, Next.js 14, and FastAPI.
+L a s t   u p d a t e d :    
+ 
